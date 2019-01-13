@@ -2,8 +2,26 @@
     <string name="app_name">Popo App</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_settings">Settings</string>
     <string name="settings">Settings</string>
     <string name="checks">Checks</string>
     <string name="title_activity_add">Voeg toe</string>
+
+    <string name="map_api_key">AIzaSyAM3NftylebrSiJFVL4P202dzvxF7bgx2o</string>
+
+
+    <string-array name="type_arrays">
+        <item>Auto: Flitser</item>
+        <item>Auto: Alcohol Controle</item>
+        <item>Auto: Algemene Controle</item>
+        <item>Scooter: Rollerbank</item>
+        <item>Scooter: Flitser</item>
+        <item>Scooter: Algemene Controle</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="km">\? KM</string>
+    <string name="title_activity_police_check">PoliceCheck</string>
+    <string name="title_maps">Maps</string>
+
+
 </resources>

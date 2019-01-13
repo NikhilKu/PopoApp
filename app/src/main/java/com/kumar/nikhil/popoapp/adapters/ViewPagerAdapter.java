@@ -1,4 +1,4 @@
-package com.kumar.nikhil.popoapp;
+package com.kumar.nikhil.popoapp.adapters;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -39,4 +39,5 @@ public class ViewPagerAdapter extends FragmentPagerAdapter{
           listFragments.add(fragment);
           listTitles.add(title);
      }
+
 }

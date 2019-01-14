@@ -26,7 +26,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.kumar.nikhil.popoapp.R;
 import com.kumar.nikhil.popoapp.models.PoliceCheck;
-import com.kumar.nikhil.popoapp.utils.FirebaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +36,6 @@ public class MapsFragment extends Fragment
 
      private FragmentActivity myContext;
      private DatabaseReference mDatabaseReference;
-     private FirebaseHelper mFirebaseHelper;
      private List<PoliceCheck> mPoliceChecks = new ArrayList<PoliceCheck>();
      private  Query mDBQuery;
 
@@ -58,7 +56,6 @@ public class MapsFragment extends Fragment
 
           //SETUP FB
           mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("checks");
-          mFirebaseHelper = new FirebaseHelper(mDatabaseReference);
 
           //QUERY
           final long ONE_DAY = 1000L * 60L * 60L * 24L;

@@ -24,7 +24,6 @@ import com.kumar.nikhil.popoapp.adapters.ChecksAdapter;
 import com.kumar.nikhil.popoapp.models.PoliceCheck;
 import com.kumar.nikhil.popoapp.R;
 import com.kumar.nikhil.popoapp.activity.AddActivity;
-import com.kumar.nikhil.popoapp.utils.FirebaseHelper;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,7 +32,6 @@ import java.util.Collections;
 public class ChecksFragment extends Fragment implements ChecksAdapter.OnItemClickListener{
      private View view;
      private DatabaseReference mDatabaseReference;
-     private FirebaseHelper mFirebaseHelper;
      private RecyclerView mRecyclerView;
      private ChecksAdapter mAdapter;
      private ArrayList<PoliceCheck> mPoliceChecks = new ArrayList<PoliceCheck>();
@@ -61,7 +59,6 @@ public class ChecksFragment extends Fragment implements ChecksAdapter.OnItemClic
 
            //setup FireBase
           mDatabaseReference = FirebaseDatabase.getInstance().getReference().child("checks");
-          mFirebaseHelper = new FirebaseHelper(mDatabaseReference);
 
           //query
           Long before24Hour =   (Long) System.currentTimeMillis() - ONE_DAY; //get only data of 24 hours or ago.
